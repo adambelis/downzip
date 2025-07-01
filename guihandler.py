@@ -37,7 +37,7 @@ class MyWindow(QWidget):
         self.launch_checkbox.setChecked(True)
 
         self.download_button = QPushButton("Download and Unpack")
-        self.download_button.setStyleSheet("background-color: #444; color: #FFF;")  # Set button color to dark gray
+        self.download_button.setStyleSheet("background-color: #444; color: #FFF; padding: 10px; min-height: 40px; font-size: 12px;")  # Set button color to dark gray
         self.download_button.clicked.connect(self.download_and_unpack)
 
         layout = QVBoxLayout()
